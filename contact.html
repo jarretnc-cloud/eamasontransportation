@@ -13,6 +13,42 @@
         <input name="bot-field">
     </p>
 
+<!-- HEADER -->
+
+<header>
+    
+<nav class="navbar">
+    <a class="logo" href="index.html">
+        <img src="ea-mason-logo.png" alt="EA Mason Transportation">
+    </a>
+
+    <button class="mobile-menu-btn" type="button" aria-label="Toggle navigation" aria-controls="primary-navigation" aria-expanded="false">&#9776;</button>
+
+    <ul class="nav-links" id="primary-navigation">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about us.html">About Us</a></li>
+        <li class="nav-dropdown">
+            <details>
+                <summary>Services</summary>
+                <ul class="dropdown-menu">
+                    <li><a href="services.html">All Services</a></li>
+                    <li><a href="box-truck.html">Box Truck</a></li>
+                    <li><a href="dry_van.html">Dry Van</a></li>
+                    <li><a href="power-unit.html">Power Unit</a></li>
+                </ul>
+            </details>
+        </li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact EA</a></li>
+    </ul>
+    
+    <span id="scroll-truck" aria-hidden="true">🚚</span>
+<script src="scroll-truck.js" defer></script>
+<script src="mobile-nav.js" defer></script>
+</nav>
+
+</header>
+
     <input type="text"
            name="company_name"
            placeholder="Company Name"
