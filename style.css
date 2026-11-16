@@ -661,13 +661,17 @@ color:#111;
     padding: 30px 8%;
 }
 
-.hero.dry-van-hero .hero-content a.btn-primary {
+.hero.dry-van-hero .hero-content a.btn-primary,
+section.cta a.btn-primary {
     display: inline-block;
     width: 252px;
     max-width: 100%;
     padding: 15px 32px;
     background: var(--gold);
     color: #000;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
     text-align: center;
     text-decoration: none;
 }
