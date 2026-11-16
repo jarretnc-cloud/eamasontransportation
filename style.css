@@ -656,6 +656,11 @@ color:#111;
     color: #000;
 }
 
+.hero.dry-van-hero {
+    min-height: 330px;
+    padding: 30px 8%;
+}
+
 .hero.dry-van-hero .hero-content a.btn-primary {
     display: inline-block;
     width: 252px;
@@ -1867,6 +1872,10 @@ footer {
 
     .home-hero .hero-buttons {
         grid-template-columns: 1fr;
+    }
+
+    .hero.dry-van-hero {
+        padding:30px 20px;
     }
 
     .dry-van-hero .hero-content,
