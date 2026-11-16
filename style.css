@@ -656,6 +656,17 @@ color:#111;
     color: #000;
 }
 
+.hero.dry-van-hero .hero-content a.btn-primary {
+    display: inline-block;
+    width: 252px;
+    max-width: 100%;
+    padding: 15px 32px;
+    background: var(--gold);
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+}
+
 .section{
 padding:clamp(50px,8vw,90px) 8%;
 }
@@ -1856,6 +1867,11 @@ footer {
 
     .home-hero .hero-buttons {
         grid-template-columns: 1fr;
+    }
+
+    .dry-van-hero .hero-content,
+    .hero.dry-van-hero .hero-content a.btn-primary {
+        width:100%;
     }
 
     .hero-buttons .btn,
