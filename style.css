@@ -1686,6 +1686,17 @@ box-shadow:
 0 5px 15px rgba(0,0,0,.3);
 }
 
+.chat-section{
+    padding:40px 20px;
+    text-align:center;
+}
+
+.chat-section .chat-btn{
+    position:static;
+    display:inline-block;
+    margin-top:20px;
+}
+
 .footer-logo{
 height:90px;
 margin-bottom:20px;
