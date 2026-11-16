@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    color:#333;
+    line-height:1.6;
+}
+
+.hero{
+    background:#0d1b2a;
+    color:#fff;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:900px;
+    margin:auto;
+    font-size:20px;
+}
+
+.section{
+    padding:70px 10%;
+}
+
+.section h2{
+    color:#0d1b2a;
+    font-size:36px;
+    margin-bottom:20px;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.equipment-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:24px;
+    margin-top:32px;
+}
+
+.equipment-card{
+    display:block;
+    min-height:150px;
+    padding:26px;
+    color:#0d1b2a;
+    background:#fff;
+    border:1px solid #dfe3e8;
+    border-radius:8px;
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
+    text-decoration:none;
+    transition:transform .18s ease, box-shadow .18s ease;
+}
+
+.equipment-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 7px 16px rgba(0,0,0,.12);
+}
+
+.equipment-card:focus-visible{
+    outline:3px solid #ff7a00;
+    outline-offset:3px;
+}
+
+.equipment-card h3{
+    margin-bottom:10px;
+    color:#0d1b2a;
+}
+
+.equipment-icon{
+    display:block;
+    margin-bottom:12px;
+    font-size:2rem;
+    line-height:1;
+}
+
+.equipment-illustration{
+    display:block;
+    width:64px;
+    height:32px;
+    margin-bottom:12px;
+    margin-right:auto;
+    color:#0d1b2a;
+    transform:scaleX(-1);
+}
+
+.service-card{
+    padding:30px;
+    background:#f8f9fa;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
+}
+
+.service-card h3{
+    color:#0d1b2a;
+    margin-bottom:15px;
+}
+
+.benefits{
+    background:#f3f5f7;
+}
+
+.benefits ul{
+    max-width:800px;
+    margin:auto;
+    font-size:18px;
+}
+
+.benefits li{
+    margin-bottom:15px;
+}
+
+.cta{
+    background:#0d1b2a;
+    color:white;
+    text-align:center;
+    padding:75px 20px;
+}
+
+.cta h2{
+    color:white;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    background:#ff7a00;
+    color:white;
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+@media (max-width: 900px) {
+    .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<header>   
+<nav class="navbar">
+    <a class="logo" href="index.html">
+        <img src="ea-mason-logo-1.png" alt="EA Mason Transportation">
+    </a>
+
+    <button class="mobile-menu-btn" type="button" aria-label="Toggle navigation" aria-controls="primary-navigation" aria-expanded="false">&#9776;</button>
+    <script src="mobile-nav.js" defer></script>
+
+    <ul class="nav-links" id="primary-navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about us.html">About Us</a></li>
+        <li class="nav-dropdown">
+            <details>
+                <summary>Services</summary>
+                <ul class="dropdown-menu">
+                    <li><a href="services.html" aria-current="page">All Services</a></li>
+                    <li><a href="box-truck.html">Box Truck</a></li>
+                    <li><a href="dry_van.html">Dry Van</a></li>
+                    <li><a href="power-unit.html">Power Unit</a></li>
+                </ul>
+            </details>
+        </li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact EA</a></li>
+    </ul>
+</nav>
+</header>
+
+<section class="hero">
+    <h1>Transportation Solutions That Move Your Business Forward</h1>
+
+    <p>
+        EA Mason Transportation LLC delivers dependable transportation and
+        logistics support designed to keep your freight moving efficiently,
+        safely, and on schedule. We partner with carriers, brokers, and
+        shippers to provide solutions that simplify operations and create
+        confidence throughout the transportation process.
+    </p>
+</section>
+
+<section class="section">
+    <h2>Our Services</h2>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+            <h3>Dispatcher Services</h3>
+
+            <p>
+                We help owner-operators and carriers secure quality freight,
+                negotiate competitive rates, and coordinate daily operations
+                so drivers can stay focused on the road.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Load Planning</h3>
+
+            <p>
+                Strategic load planning that maximizes equipment utilization,
+                minimizes deadhead miles, and improves overall profitability.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Broker Communication</h3>
+
+            <p>
+                Professional coordination with brokers to ensure accurate
+                information, smooth scheduling, and timely updates from pickup
+                to delivery.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Route Coordination</h3>
+
+            <p>
+                Efficient route planning and transportation management designed
+                to support on-time deliveries while reducing operating costs.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Documentation Management</h3>
+
+            <p>
+                Assistance with rate confirmations, bills of lading, proof
+                of delivery documents, and other transportation-related paperwork.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Carrier Support</h3>
+
+            <p>
+                Dedicated support that helps carriers stay organized, informed,
+                and positioned for long-term success in a competitive market.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section equipment-section">
+    <h2>Dispatching by Equipment</h2>
+
+    <div class="equipment-grid">
+        <a href="dry_van.html" class="equipment-card">
+            <span class="equipment-icon" aria-hidden="true">🚛</span>
+            <h3>Dry Van</h3>
+            <p>Full-service dispatching for Dry Van carriers.</p>
+        </a>
+
+        <a href="box-truck.html" class="equipment-card">
+            <span class="equipment-icon" aria-hidden="true">🚚</span>
+            <h3>Box Truck</h3>
+            <p>Find consistent freight opportunities.</p>
+        </a>
+
+        <a href="power-unit.html" class="equipment-card">
+            <svg class="equipment-illustration" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M24 43h57V30c0-7 5-12 12-12h34c5 0 10 2 13 6l18 19h10c7 0 12 5 12 12v15H24V53c0-6 3-10 8-10Zm88-16v19h37l-17-18c-1-1-3-1-5-1h-15Z"/>
+                <path fill="#ffd400" d="M117 29h15c2 0 3 1 4 2l13 15h-32V29Z"/>
+                <path fill="currentColor" d="M163 51h10v13h-10zM92 44h3v19h-3z"/>
+                <circle cx="55" cy="70" r="14" fill="#111"/>
+                <circle cx="55" cy="70" r="6" fill="#ffd400"/>
+                <circle cx="147" cy="70" r="14" fill="#111"/>
+                <circle cx="147" cy="70" r="6" fill="#ffd400"/>
+            </svg>
+            <h3>Power Unit</h3>
+            <p>Dispatch services for tractor-only operators.</p>
+        </a>
+    </div>
+</section>
+
+<section class="section benefits">
+
+    <h2>Why Businesses Choose EA Mason Transportation LLC</h2>
+
+    <ul>
+        <li>✅ Transparent communication throughout the transportation process</li>
+
+        <li>✅ Reliable dispatch support focused on maximizing revenue opportunities</li>
+
+        <li>✅ Fast response times and proactive problem solving</li>
+
+        <li>✅ Professional broker and customer relationships</li>
+
+        <li>✅ Strong commitment to on-time service and accountability</li>
+
+        <li>✅ Personalized solutions for every client and shipment</li>
+    </ul>
+
+</section>
+
+<section class="section">
+
+    <h2>Built Around Your Success</h2>
+
+    <p>
+        Every business has unique transportation requirements. That's why we
+        take time to understand your goals, operating preferences, and growth
+        objectives before developing a strategy that supports your success.
+    </p>
+
+    <p>
+        Whether you're an owner-operator seeking consistent freight, a carrier
+        looking to optimize operations, or a business requiring dependable
+        transportation support, EA Mason Transportation LLC is committed to
+        helping you achieve better results.
+    </p>
+
+</section>
+
+<section class="cta">
+
+    <h2>Ready to Move More Efficiently?</h2>
+
+    <p>
+        Partner with EA Mason Transportation LLC and experience a transportation
+        team dedicated to communication, reliability, and exceptional service.
+    </p>
+
+    <a href="contact.html" class="btn">Request a Consultation</a>
+
+</section>
+
+<a href="tel:+18005551234" class="chat-btn">
+    💬 Chat With Dispatch
+</a>
+
+<footer>
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="resources.html">Resources</a></li>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <p>&copy; 2026 EA Mason Transportation LLC. All Rights Reserved.</p>
+</footer>
+
+
+</body>
+</html>

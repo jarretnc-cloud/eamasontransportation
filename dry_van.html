@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dry Van Dispatch Services | EA Mason Transportation LLC</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+    
+<nav class="navbar">
+    <a class="logo" href="index.html">
+        <img src="ea-mason-logo-1.png" alt="EA Mason Transportation">
+    </a>
+
+    <button class="mobile-menu-btn" type="button" aria-label="Toggle navigation" aria-controls="primary-navigation" aria-expanded="false">&#9776;</button>
+    <script src="mobile-nav.js" defer></script>
+
+    <ul class="nav-links" id="primary-navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about us.html">About Us</a></li>
+        <li class="nav-dropdown">
+            <details>
+                <summary aria-current="page">Services</summary>
+                <ul class="dropdown-menu">
+                    <li><a href="services.html">All Services</a></li>
+                    <li><a href="box-truck.html">Box Truck</a></li>
+                    <li><a href="dry_van.html" aria-current="page">Dry Van</a></li>
+                    <li><a href="power-unit.html">Power Unit</a></li>
+                </ul>
+            </details>
+        </li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact EA</a></li>
+    </ul>
+    
+    <span id="scroll-truck" aria-hidden="true">🚚</span>
+<script src="scroll-truck.js" defer></script>
+</nav>
+
+<script>
+    document.addEventListener('scroll', function () {
+        document.querySelectorAll('.nav-dropdown details').forEach(function (detail) {
+            detail.removeAttribute('open');
+        });
+    }, { passive: true });
+</script>
+
+</header>
+
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <h1>Dry Van Dispatch Services</h1>
+
+        <p>
+            Keep your truck loaded, reduce deadhead miles,
+            and maximize every opportunity on the road.
+        </p>
+
+        <a href="contact.html" class="btn-primary">
+            Get Started Today
+        </a>
+    </div>
+</section>
+
+<!-- REVENUE TILES -->
+
+<section class="stats">
+
+    <div class="section-title">
+        <h2>What Dry Van Drivers Can Earn</h2>
+        <p>Real revenue opportunities with strategic dispatch support.</p>
+    </div>
+
+    <div class="stats-grid">
+
+        <div class="stat-card">
+            <h3>$2.45+</h3>
+            <span>Average Rate Per Mile</span>
+        </div>
+
+        <div class="stat-card">
+            <h3>$7,200+</h3>
+            <span>Weekly Gross Revenue</span>
+        </div>
+
+        <div class="stat-card">
+            <h3>$225K+</h3>
+            <span>Annual Revenue Potential</span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- LOAD TYPES -->
+
+<section class="services">
+
+    <div class="section-title">
+        <h2>Freight We Dispatch Every Day</h2>
+    </div>
+
+    <div class="service-grid">
+
+        <div class="service-card">
+            <i class="fas fa-box"></i>
+            <h3>Retail Goods</h3>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-couch"></i>
+            <h3>Furniture</h3>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-laptop"></i>
+            <h3>Electronics</h3>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-warehouse"></i>
+            <h3>Warehouse Transfers</h3>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-car"></i>
+            <h3>Auto Parts</h3>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-shopping-cart"></i>
+            <h3>E-Commerce Freight</h3>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="freight-map-section">
+    <div class="section-title">
+        <h2>High-Demand Freight Markets</h2>
+        <p>
+            We help drivers access strong freight corridors and
+            profitable dry van opportunities throughout the country.
+        </p>
+    </div>
+
+    <div class="lane-details">
+        <div class="lane-row">
+            <h3>Southeast Corridor</h3>
+            <p>Atlanta → Orlando → Jacksonville</p>
+            <span>$2.35 - $3.10 CPM</span>
+        </div>
+        <div class="lane-row">
+            <h3>Texas Regional Network</h3>
+            <p>Dallas → Houston → San Antonio</p>
+            <span>$2.25 - $2.95 CPM</span>
+        </div>
+        <div class="lane-row">
+            <h3>Midwest Distribution Route</h3>
+            <p>Chicago → Indianapolis → Columbus</p>
+            <span>$2.30 - $3.05 CPM</span>
+        </div>
+        <div class="lane-row">
+            <h3>East Coast Corridor</h3>
+            <p>Charlotte → Richmond → Baltimore</p>
+            <span>$2.45 - $3.20 CPM</span>
+        </div>
+    </div>
+
+    <div class="rate-disclaimer">
+        <p>
+            <strong>2026 Rate Disclaimer:</strong>
+            Rates shown represent estimated market ranges based on
+            publicly available freight data and historical lane performance.
+            Actual rates vary based on seasonality, fuel costs, equipment,
+            broker relationships, freight demand, and market conditions.
+            EA Mason Transportation LLC does not guarantee specific load rates or earnings.
+        </p>
+    </div>
+</section>
+
+<!-- PROBLEMS WE SOLVE -->
+
+<section class="solutions">
+
+    <div class="section-title">
+        <h2>Challenges We Solve</h2>
+    </div>
+
+    <div class="solution-grid">
+
+        <div class="solution-card">
+            <h3>💲 Better Rates</h3>
+            <p>
+                We negotiate directly with brokers to maximize
+                your earnings on every load.
+            </p>
+        </div>
+
+        <div class="solution-card">
+            <h3>🧱 Less Deadhead</h3>
+            <p>
+                Strategic reload planning helps keep your wheels turning.
+            </p>
+        </div>
+
+        <div class="solution-card">
+            <h3>🕒 More Time</h3>
+            <p>
+                Focus on driving while we handle load searching and paperwork.
+            </p>
+        </div>
+
+        <div class="solution-card">
+            <h3>📦 Reliable Freight</h3>
+            <p>
+                Access consistent opportunities from trusted broker networks.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- WHY CHOOSE EA MASON -->
+
+<section class="features">
+
+    <div class="section-title">
+        <h2>Why Drivers Choose EA Mason</h2>
+    </div>
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+            <i class="fas fa-headset"></i>
+            <h3>Dedicated Dispatcher</h3>
+        </div>
+
+        <div class="feature-card">
+            <i class="fas fa-dollar-sign"></i>
+            <h3>Strong Rate Negotiation</h3>
+        </div>
+
+        <div class="feature-card">
+            <i class="fas fa-route"></i>
+            <h3>Reduced Deadhead</h3>
+        </div>
+
+        <div class="feature-card">
+            <i class="fas fa-file-invoice"></i>
+            <h3>Back Office Support</h3>
+        </div>
+
+        <div class="feature-card">
+            <i class="fas fa-users"></i>
+            <h3>Small Fleet Support</h3>
+        </div>
+
+        <div class="feature-card">
+            <i class="fas fa-truck"></i>
+            <h3>Driver First Approach</h3>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta">
+
+    <h2>Ready To Increase Your Revenue?</h2>
+
+    <p>
+        Let EA Mason Transportation LLC secure better loads,
+        negotiate stronger rates, and keep your truck moving.
+    </p>
+
+    <a href="contact.html" class="btn-primary">
+        Start Today
+    </a>
+
+</section>
+
+</body>
+</html>

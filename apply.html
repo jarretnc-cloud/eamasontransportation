@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Owner Operator Application | EA Mason Transportation</title>
+
+<style>
+:root{
+    --gold:#d4af37;
+    --dark:#0b0b0b;
+    --card:#121212;
+    --gray:#9ca3af;
+    --white:#ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000;
+    color:#fff;
+    font-family:Inter,Arial,sans-serif;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,.85),rgba(0,0,0,.92));
+    padding:80px 20px;
+    text-align:center;
+}
+
+.hero img{
+    max-width:260px;
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-size:3rem;
+    color:var(--gold);
+    margin-bottom:15px;
+}
+
+.hero p{
+    color:#ddd;
+    max-width:700px;
+    margin:auto;
+    line-height:1.7;
+}
+
+.application-wrapper{
+    max-width:1100px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+.form-card{
+    background:var(--card);
+    border:1px solid rgba(212,175,55,.3);
+    border-radius:20px;
+    padding:40px;
+}
+
+.section-title{
+    color:var(--gold);
+    margin-bottom:20px;
+    border-bottom:1px solid rgba(212,175,55,.3);
+    padding-bottom:10px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+    margin-bottom:25px;
+}
+
+.field{
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+input,
+select,
+textarea{
+    background:#1a1a1a;
+    border:1px solid #333;
+    color:#fff;
+    padding:14px;
+    border-radius:10px;
+}
+
+textarea{
+    min-height:120px;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline:none;
+    border-color:var(--gold);
+}
+
+.submit-btn{
+    width:100%;
+    background:var(--gold);
+    color:#000;
+    border:none;
+    padding:18px;
+    font-size:18px;
+    font-weight:700;
+    border-radius:12px;
+    cursor:pointer;
+    margin-top:30px;
+}
+
+.submit-btn:hover{
+    opacity:.9;
+}
+
+.notice{
+    background:rgba(212,175,55,.08);
+    border:1px solid rgba(212,175,55,.2);
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:30px;
+}
+
+.footer-note{
+    text-align:center;
+    color:#888;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+    <img src="ea-mason-logo.png" alt="EA Mason Transportation">
+    <h1>Owner Operator Application</h1>
+    <p>
+        Complete the application below and upload the required documents.
+        Once submitted, an EA Mason Transportation representative will
+        review your information and contact you.
+    </p>
+</section>
+
+<div class="application-wrapper">
+
+<form
+name="owner-operator-application"
+method="POST"
+data-netlify="true"
+netlify-honeypot="bot-field"
+enctype="multipart/form-data">
+
+<input type="hidden" name="form-name" value="owner-operator-application">
+
+<p hidden>
+<input name="bot-field">
+</p>
+
+<div class="form-card">
+
+<div class="notice">
+<strong>Required Documents:</strong>
+MC Authority • W9 • Certificate of Insurance • Driver License
+</div>
+
+<h2 class="section-title">Carrier Information</h2>
+
+<div class="grid">
+<div class="field">
+<label>Company Name *</label>
+<input type="text" name="company_name" required>
+</div>
+
+<div class="field">
+<label>DBA</label>
+<input type="text" name="dba">
+</div>
+
+<div class="field">
+<label>MC Number *</label>
+<input type="text" name="mc_number" required>
+</div>
+
+<div class="field">
+<label>DOT Number *</label>
+<input type="text" name="dot_number" required>
+</div>
+
+<div class="field">
+<label>Main Contact *</label>
+<input type="text" name="contact_name" required>
+</div>
+
+<div class="field">
+<label>Email *</label>
+<input type="email" name="email" required>
+</div>
+
+<div class="field">
+<label>Office Phone</label>
+<input type="tel" name="office_phone">
+</div>
+
+<div class="field">
+<label>Cell Phone *</label>
+<input type="tel" name="cell_phone" required>
+</div>
+</div>
+
+<h2 class="section-title">Address Information</h2>
+
+<div class="grid">
+<div class="field">
+<label>Physical Address</label>
+<input type="text" name="address">
+</div>
+
+<div class="field">
+<label>City</label>
+<input type="text" name="city">
+</div>
+
+<div class="field">
+<label>State</label>
+<input type="text" name="state">
+</div>
+
+<div class="field">
+<label>Zip Code</label>
+<input type="text" name="zip">
+</div>
+</div>
+
+<h2 class="section-title">Equipment Profile</h2>
+
+<div class="grid">
+<div class="field">
+<label>Equipment Type</label>
+<select name="equipment_type">
+<option>Semi Truck</option>
+<option>Hotshot</option>
+<option>Box Truck</option>
+<option>Power Only</option>
+<option>Sprinter Van</option>
+</select>
+</div>
+
+<div class="field">
+<label>Number of Trucks</label>
+<input type="number" name="truck_count">
+</div>
+
+<div class="field">
+<label>Trailer Type</label>
+<select name="trailer_type">
+<option>Dry Van</option>
+<option>Reefer</option>
+<option>Flatbed</option>
+<option>Step Deck</option>
+<option>Power Only</option>
+<option>Box Truck</option>
+</select>
+</div>
+
+<div class="field">
+<label>Minimum Rate Per Mile</label>
+<input type="text" name="rpm">
+</div>
+</div>
+
+<h2 class="section-title">Operating Preferences</h2>
+
+<div class="grid">
+<div class="field">
+<label>Maximum Pickups</label>
+<input type="number" name="max_pickups">
+</div>
+
+<div class="field">
+<label>Maximum Drops</label>
+<input type="number" name="max_drops">
+</div>
+
+<div class="field">
+<label>Driver Touch Freight?</label>
+<select name="touch_freight">
+<option>No</option>
+<option>Yes</option>
+</select>
+</div>
+
+<div class="field">
+<label>Preferred Operating Region</label>
+<input type="text" name="preferred_region">
+</div>
+</div>
+
+<h2 class="section-title">Broker References</h2>
+
+<div class="field">
+<label>Current Brokers/Carriers You Are Set Up With</label>
+<textarea name="brokers"></textarea>
+</div>
+
+<h2 class="section-title">Document Uploads</h2>
+
+<div class="grid">
+
+<div class="field">
+<label>W9</label>
+<input type="file" name="w9">
+</div>
+
+<div class="field">
+<label>MC Authority</label>
+<input type="file" name="authority">
+</div>
+
+<div class="field">
+<label>Certificate of Insurance</label>
+<input type="file" name="insurance">
+</div>
+
+<div class="field">
+<label>Driver License</label>
+<input type="file" name="license">
+</div>
+
+</div>
+
+<h2 class="section-title">Additional Comments</h2>
+
+<div class="field">
+<textarea
+name="comments"
+placeholder="Tell us anything important about your operation..."></textarea>
+</div>
+
+<button type="submit" class="submit-btn">
+SUBMIT APPLICATION
+</button>
+
+</div>
+</form>
+
+<div class="footer-note">
+EA Mason Transportation LLC
+</div>
+
+</div>
+
+</body>
+</html>

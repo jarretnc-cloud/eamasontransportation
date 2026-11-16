@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Driver Resources | EA Mason Transportation LLC</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.resources-hero{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.resources-container{
+    padding:60px 8%;
+}
+
+.resource-group{
+    width:100%;
+    max-width:900px;
+    margin:0 auto 40px;
+}
+
+.resource-group h2{
+    margin:0 0 20px;
+    color:#0d1b2a;
+    font-size:2rem;
+}
+
+.resource-card{
+    width:100%;
+    max-width:900px;
+    background:rgba(255,255,255,.82);
+    padding:30px;
+    margin:0 auto 20px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s ease;
+}
+
+.resource-card:hover{
+    transform:translateY(-8px);
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.15);
+}
+
+.driver-toolkit{
+    padding:30px 8% 0;
+    text-align:center;
+}
+
+.driver-toolkit h2{
+    margin:0 0 20px;
+    color:#0d1b2a;
+    font-size:2rem;
+}
+
+.toolkit-grid{
+    display:grid;
+    grid-template-columns:repeat(4, minmax(0, 1fr));
+    gap:16px;
+    max-width:900px;
+    margin:0 auto;
+}
+
+.toolkit-grid div{
+    padding:18px 14px;
+    background:rgba(255,255,255,.82);
+    border:1px solid rgba(11,31,58,.08);
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.06);
+    font-weight:600;
+    color:#0d1b2a;
+}
+
+.driver-success-center{
+    padding:80px 8%;
+    background:#f8f8f8;
+}
+
+.section-header{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.toolkit-grid{
+    display:grid;
+    grid-template-columns:
+        repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.toolkit-card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s ease;
+}
+
+.toolkit-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.toolkit-icon{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.toolkit-card h3{
+    margin-bottom:12px;
+}
+
+.toolkit-card p{
+    color:#555;
+    margin-bottom:20px;
+}
+
+.toolkit-btn{
+    display:inline-block;
+    background:#B89B58;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.featured-card{
+    background:#111;
+    color:white;
+    border:2px solid #B89B58;
+}
+
+.featured-card p{
+    color:#ddd;
+}
+
+.featured-card .toolkit-btn{
+    background:#B89B58;
+}
+
+.resource-card h3{
+    margin-bottom:10px;
+}
+
+.resource-card a{
+    color:#B89B58;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.resource-card a:hover{
+    text-decoration:underline;
+}
+
+.chat-btn{
+    position:fixed;
+    bottom:30px;
+    right:30px;
+
+    background:#b89b58;
+
+    color:white;
+
+    padding:18px 25px;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+.profit-calculator-section{
+    padding:80px 8%;
+    background:#111;
+    color:white;
+}
+
+.calculator-container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.calculator-container h2{
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.calculator-container p{
+    text-align:center;
+    margin-bottom:40px;
+    color:#ccc;
+}
+
+.calculator-form{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-bottom:40px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.form-group label{
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.form-group input{
+    padding:12px;
+    border:none;
+    border-radius:8px;
+}
+
+.calc-btn{
+    background:#B89B58;
+    color:white;
+    border:none;
+    border-radius:8px;
+    padding:14px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.calc-btn:hover{
+    background:#a38748;
+}
+
+.results{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.result-card{
+    background:white;
+    color:#111;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.result-card h3{
+    margin-top:10px;
+    font-size:2rem;
+}
+
+.result-card.profit{
+    background:#B89B58;
+    color:white;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- SAME HEADER AS INDEX.HTML -->
+
+<header>
+    
+<nav class="navbar">
+    <a class="logo" href="index.html">
+        <img src="ea-mason-logo-1.png" alt="EA Mason Transportation">
+    </a>
+
+    <button class="mobile-menu-btn" type="button" aria-label="Toggle navigation" aria-controls="primary-navigation" aria-expanded="false">&#9776;</button>
+    <script src="mobile-nav.js" defer></script>
+
+    <ul class="nav-links" id="primary-navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about us.html">About Us</a></li>
+        <li class="nav-dropdown">
+            <details>
+                <summary>Services</summary>
+                <ul class="dropdown-menu">
+                    <li><a href="services.html">All Services</a></li>
+                    <li><a href="box-truck.html">Box Truck</a></li>
+                    <li><a href="dry_van.html">Dry Van</a></li>
+                    <li><a href="power-unit.html">Power Unit</a></li>
+                </ul>
+            </details>
+        </li>
+        <li><a href="resources.html" aria-current="page">Resources</a></li>
+        <li><a href="contact.html">Contact EA</a></li>
+    </ul>
+</nav>
+
+</header>
+
+<section class="resources-hero">
+
+<h1>Tools Every Professional Driver Needs</h1>
+
+<p>
+Fuel savings, load boards, compliance tools,
+weather tracking, profit calculators, and resources
+trusted by owner operators nationwide.
+</p>
+
+</section>
+
+<section class="driver-success-center">
+
+    <div class="section-header">
+        <h2>Driver Success Center</h2>
+        <p>
+            Essential tools and resources to help owner operators
+            stay compliant, reduce expenses, and maximize revenue.
+        </p>
+    </div>
+
+    <div class="toolkit-grid">
+
+        <div class="toolkit-card">
+            <div class="toolkit-icon">📈</div>
+
+            <h3>Freight Market Rates</h3>
+
+            <p>
+                Monitor market trends and freight pricing to make
+                informed booking decisions.
+            </p>
+
+            <a href="https://www.dat.com/industry-trends/trendlines"
+               target="_blank"
+               class="toolkit-btn">
+               View Rates
+            </a>
+        </div>
+
+        <div class="toolkit-card">
+            <div class="toolkit-icon">💰</div>
+
+            <h3>Profit Calculator</h3>
+
+            <p>
+                Estimate revenue, fuel costs, and profit per mile.
+            </p>
+
+            <a href="#profit-calculator"
+               class="toolkit-btn">
+               Calculate Profit
+            </a>
+        </div>
+
+        <div class="toolkit-card">
+            <div class="toolkit-icon">🌦️</div>
+
+            <h3>Weather &amp; Route Planning</h3>
+
+            <p>
+                Check weather alerts and plan safer routes nationwide.
+            </p>
+
+            <a href="https://weather.gov"
+               target="_blank"
+               class="toolkit-btn">
+               View Forecast
+            </a>
+        </div>
+
+        <div class="toolkit-card">
+            <div class="toolkit-icon">🛡️</div>
+
+            <h3>Compliance Resources</h3>
+
+            <p>
+                Access FMCSA, SAFER, ELD, and carrier compliance tools.
+            </p>
+
+            <a href="#compliance-resources"
+               class="toolkit-btn">
+               Get Compliant
+            </a>
+        </div>
+
+        <div class="toolkit-card">
+            <div class="toolkit-icon">🚛</div>
+
+            <h3>Equipment Resources</h3>
+
+            <p>
+                Resources tailored to Dry Van, Box Truck, and Power Unit operations.
+            </p>
+
+            <a href="services.html"
+               class="toolkit-btn">
+               Explore Equipment
+            </a>
+        </div>
+
+        <div class="toolkit-card featured-card">
+            <div class="toolkit-icon">💬</div>
+
+            <h3>Talk With Dispatch</h3>
+
+            <p>
+                Ready to maximize your earning potential?
+                Speak directly with the EA Mason team.
+            </p>
+
+            <a href="contact.html"
+               class="toolkit-btn">
+               Contact Dispatch
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="profit-calculator-section" id="profit-calculator">
+
+    <div class="calculator-container">
+
+        <h2>🚛 Profit Per Load Calculator</h2>
+
+        <p>
+            Estimate your revenue, fuel expense, and projected profit
+            before booking a load.
+        </p>
+
+        <div class="calculator-form">
+
+            <div class="form-group">
+                <label>Rate Per Mile ($)</label>
+                <input type="number" id="ratePerMile" placeholder="2.50">
+            </div>
+
+            <div class="form-group">
+                <label>Total Loaded Miles</label>
+                <input type="number" id="loadedMiles" placeholder="1000">
+            </div>
+
+            <div class="form-group">
+                <label>Diesel Price Per Gallon ($)</label>
+                <input type="number" id="dieselPrice" placeholder="3.75">
+            </div>
+
+            <div class="form-group">
+                <label>Truck MPG</label>
+                <input type="number" id="mpg" placeholder="7">
+            </div>
+
+            <button onclick="calculateProfit()" class="calc-btn">
+                Calculate Profit
+            </button>
+
+        </div>
+
+        <div class="results">
+
+            <div class="result-card">
+                <span>Gross Revenue</span>
+                <h3 id="grossRevenue">$0.00</h3>
+            </div>
+
+            <div class="result-card">
+                <span>Fuel Cost</span>
+                <h3 id="fuelCost">$0.00</h3>
+            </div>
+
+            <div class="result-card profit">
+                <span>Estimated Profit</span>
+                <h3 id="netProfit">$0.00</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="resources-container" id="resources">
+
+<div class="resource-group" id="compliance-resources">
+    <h2>Compliance Resources</h2>
+
+    <div class="resource-card">
+        <h3>1. FMCSA Registration & Compliance</h3>
+        <p>Federal Motor Carrier Safety Administration resources and regulations.</p>
+        <a href="https://www.fmcsa.dot.gov" target="_blank">
+        Visit FMCSA
+        </a>
+    </div>
+
+    <div class="resource-card">
+        <h3>2. SAFER Company Snapshot</h3>
+        <p>Verify carrier authority and safety records.</p>
+        <a href="https://safer.fmcsa.dot.gov" target="_blank">
+        Check SAFER
+        </a>
+    </div>
+
+    <div class="resource-card">
+        <h3>3. ELD Compliance Information</h3>
+        <p>Learn requirements and best practices for electronic logging devices.</p>
+        <a href="https://eld.fmcsa.dot.gov" target="_blank">
+        View ELD Information
+        </a>
+    </div>
+</div>
+
+<div class="resource-group" id="operating-resources">
+    <h2>Operating Resources</h2>
+
+    <div class="resource-card">
+        <h3>4. National Weather Service</h3>
+        <p>Monitor weather conditions before planning routes.</p>
+        <a href="https://weather.gov" target="_blank">
+        View Weather Alerts
+        </a>
+    </div>
+
+    <div class="resource-card">
+        <h3>5. Truck Stop Fuel Prices</h3>
+        <p>Locate truck stops and compare diesel prices.</p>
+        <a href="https://www.gasbuddy.com/tripcostcalculator" target="_blank">
+        Check Fuel Prices
+        </a>
+    </div>
+
+    <div class="resource-card">
+        <h3>6. Truckers Path</h3>
+        <p>Find truck stops, parking, scales, and route information.</p>
+        <a href="https://truckerpath.com" target="_blank">
+        Open Trucker Path
+        </a>
+    </div>
+</div>
+
+<div class="resource-group" id="profitability-resources">
+    <h2>Profitability Resources</h2>
+
+    <div class="resource-card">
+        <h3>7. DAT Load Board</h3>
+        <p>Industry-leading freight and load board platform.</p>
+        <a href="https://www.dat.com" target="_blank">
+        Visit DAT
+        </a>
+    </div>
+
+    <div class="resource-card">
+        <h3>8. Free Trucking Cost Calculator</h3>
+        <p>Estimate operating expenses and profitability.</p>
+        <a href="https://www.calculator.net" target="_blank">
+        Use Calculator
+        </a>
+    </div>
+
+    <div class="resource-card">
+        <h3>9. Factoring Education</h3>
+        <p>Understand trucking factoring and cash flow management.</p>
+        <a href="https://www.rtsinc.com" target="_blank">
+        Learn About Factoring
+        </a>
+    </div>
+
+    <div class="resource-card">
+        <h3>10. Freight Rate Calculator</h3>
+        <p>Understand market rates and improve negotiations.</p>
+        <a href="https://www.dat.com/industry-trends/trendlines" target="_blank">
+        View Rate Trends
+        </a>
+    </div>
+</div>
+
+</section>
+
+<a href="tel:+18005551234" class="chat-btn">
+    💬 Chat With Dispatch
+</a>
+
+<footer>
+
+<div class="footer-links">
+<a href="index.html">Home</a>
+<a href="about us.html">About Us</a>
+<a href="services.html">Services</a>
+<a href="resources.html">Resources</a>
+<a href="contact.html">Contact</a>
+</div>
+
+<p>&copy; 2026 EA Mason Transportation LLC. All Rights Reserved.</p>
+
+</footer>
+
+<script>
+
+function calculateProfit(){
+
+    const rate =
+        parseFloat(document.getElementById('ratePerMile').value) || 0;
+
+    const miles =
+        parseFloat(document.getElementById('loadedMiles').value) || 0;
+
+    const diesel =
+        parseFloat(document.getElementById('dieselPrice').value) || 0;
+
+    const mpg =
+        parseFloat(document.getElementById('mpg').value) || 1;
+
+    const grossRevenue = rate * miles;
+
+    const fuelCost = (miles / mpg) * diesel;
+
+    const netProfit = grossRevenue - fuelCost;
+
+    document.getElementById("grossRevenue").innerText =
+        "$" + grossRevenue.toFixed(2);
+
+    document.getElementById("fuelCost").innerText =
+        "$" + fuelCost.toFixed(2);
+
+    document.getElementById("netProfit").innerText =
+        "$" + netProfit.toFixed(2);
+}
+
+</script>
+
+</body>
+</html>
