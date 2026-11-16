@@ -1601,6 +1601,15 @@ padding:15px;
 margin-bottom:15px;
 }
 
+.contact-form select{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:5px;
+    background:white;
+}
+
 .calculator button{
 background:var(--gold);
 color:white;

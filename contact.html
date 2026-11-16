@@ -1,162 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us | EA Mason Transportation LLC</title>
+<form class="contact-form"
+      name="contact-request"
+      method="POST"
+      action="/thank-you.html"
+      data-netlify="true"
+      netlify-honeypot="bot-field">
 
-<link rel="stylesheet" href="style.css">
+    <input type="hidden" name="form-name" value="contact-request">
 
-<style>
-
-.contact-section{
-    max-width:800px;
-    margin:60px auto;
-    padding:40px;
-}
-
-.contact-form{
-    max-width:650px;
-    margin:0 auto;
-    background:rgba(245,245,245,.82);
-    padding:30px;
-    border-radius:10px;
-}
-
-.contact-form input,
-.contact-form textarea{
-    width:100%;
-    padding:15px;
-    margin-bottom:15px;
-    border:1px solid #ddd;
-    border-radius:5px;
-}
-
-.contact-form button{
-    background:#B89B58;
-    color:white;
-    border:none;
-    padding:15px 30px;
-    border-radius:5px;
-    cursor:pointer;
-    font-weight:bold;
-}
-
-.chat-section{
-    text-align:center;
-    margin-top:50px;
-    padding:40px;
-    background:#111;
-    color:white;
-    border-radius:10px;
-}
-
-.chat-btn{
-    display:inline-block;
-    margin-top:20px;
-    background:#B89B58;
-    color:white;
-    text-decoration:none;
-    padding:15px 25px;
-    border-radius:5px;
-    font-weight:bold;
-}
-
-</style>
-</head>
-
-<body>
-
-<header>
-    
-<nav class="navbar">
-    <a class="logo" href="index.html">
-        <img src="ea-mason-logo.png" alt="EA Mason Transportation">
-    </a>
-
-    <button class="mobile-menu-btn" type="button" aria-label="Toggle navigation" aria-controls="primary-navigation" aria-expanded="false">&#9776;</button>
-    <script src="mobile-nav.js" defer></script>
-
-    <ul class="nav-links" id="primary-navigation">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about us.html">About Us</a></li>
-        <li class="nav-dropdown">
-            <details>
-                <summary>Services</summary>
-                <ul class="dropdown-menu">
-                    <li><a href="services.html">All Services</a></li>
-                    <li><a href="box-truck.html">Box Truck</a></li>
-                    <li><a href="dry_van.html">Dry Van</a></li>
-                    <li><a href="power-unit.html">Power Unit</a></li>
-                </ul>
-            </details>
-        </li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="contact.html" aria-current="page">Contact EA</a></li>
-    </ul>
-</nav>
-
-</header>
-
-<section class="contact-section">
-
-    <h1>Contact EA Mason Transportation LLC</h1>
-
-    <p>
-        Have questions about dispatch services, available loads, or carrier support?
-        Complete the form below and one of our team members will contact you.
+    <p hidden>
+        <input name="bot-field">
     </p>
 
-    <form class="contact-form"
-      action="https://formsubmit.co/eamllc419@gmail.com"
-      method="POST">
+    <input type="text"
+           name="company_name"
+           placeholder="Company Name"
+           required>
 
-    <input type="text" name="company_name"
-           placeholder="Company Name" required>
+    <input type="text"
+           name="contact_name"
+           placeholder="Contact Name"
+           required>
 
-    <input type="text" name="contact_name"
-           placeholder="Contact Name" required>
+    <input type="email"
+           name="email"
+           placeholder="Email Address"
+           required>
 
-    <input type="email" name="email"
-           placeholder="Email Address" required>
+    <input type="tel"
+           name="phone"
+           placeholder="Phone Number"
+           required>
 
-    <input type="tel" name="phone"
-           placeholder="Phone Number">
+    <select name="service_interest" required>
+        <option value="">Select Service</option>
+        <option>Dispatch Services</option>
+        <option>Owner Operator Support</option>
+        <option>Box Truck Dispatch</option>
+        <option>Power Only Dispatch</option>
+        <option>Dry Van Dispatch</option>
+        <option>General Information</option>
+    </select>
 
-    <input type="text" name="mc_number"
+    <input type="text"
+           name="mc_number"
            placeholder="MC Number (Optional)">
 
-    <textarea name="message" rows="6"
-              placeholder="How can we help you?" required></textarea>
+    <textarea name="message"
+              rows="6"
+              placeholder="Tell us how we can help..."
+              required></textarea>
 
-    <button type="submit">Submit Request</button>
+    <button type="submit">
+        Submit Request
+    </button>
+
 </form>
 
-    <div class="chat-section">
+<div class="chat-section">
 
-        <h2>Need Immediate Assistance?</h2>
+    <h2>Need Immediate Assistance?</h2>
 
-        <p>
-            Chat with one of our representatives for answers about
-            dispatch services, onboarding, carrier requirements, available lanes,
-            and general questions.
-        </p>
+    <p>
+        Chat with one of our representatives for answers about
+        dispatch services, onboarding, carrier requirements,
+        available lanes, and general questions.
+    </p>
 
-    </div>
+    <a href="tel:+18005551234" class="chat-btn">
+        💬 Call Dispatch
+    </a>
 
-</section>
-
-<footer>
-    <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="resources.html">Resources</a>
-        <a href="contact.html">Contact</a>
-    </div>
-
-    <p>&copy; 2026 EA Mason Transportation LLC. All Rights Reserved.</p>
-</footer>
-
-</body>
-</html>
+</div>
