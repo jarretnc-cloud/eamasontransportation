@@ -645,7 +645,8 @@ color:#111;
     text-decoration: none;
 }
 
-.hero.home-hero .hero-buttons a.btn-primary {
+.hero.home-hero .hero-buttons a.btn-primary,
+.hero.truck-hero .hero-buttons a.btn-primary {
     background: var(--gold);
     color: #000;
 }
@@ -913,18 +914,18 @@ gap:25px;
 
 .truck-hero .btn-primary {
     display: inline-block;
+    width: 252px;
+    max-width: 100%;
     margin: 0;
-    padding: 10px 20px;
-    color: #111;
-    background: #ffd400;
+    padding: 15px 32px;
     border-radius: 5px;
-    font-size: .9rem;
+    font-size: 1rem;
     font-weight: 700;
     text-decoration: none;
     transition: background-color .18s ease, transform .18s ease;
 }
 
-.truck-hero .btn-primary:hover {
+.hero.truck-hero .hero-buttons a.btn-primary:hover {
     background: #f4b400;
     transform: translateY(-1px);
 }
