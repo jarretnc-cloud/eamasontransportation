@@ -11,7 +11,8 @@
     .hero{
     background:#0d1b2a;
     color:white;
-    padding:80px 20px;
+    min-height:330px;
+    padding:30px 20px;
     text-align:center;
 }
 
@@ -43,8 +44,26 @@
 }
 
 @media (max-width:768px) {
+    .hero h1 {
+        font-size:36px;
+    }
+
+    .hero p {
+        font-size:18px;
+    }
+
     .hero .hero-content a.hero-btn {
         width:100%;
+    }
+}
+
+@media (max-width:520px) {
+    .hero h1 {
+        font-size:32px;
+    }
+
+    .hero p {
+        font-size:17px;
     }
 }
 
