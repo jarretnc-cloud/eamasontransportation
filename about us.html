@@ -26,6 +26,28 @@
     font-size:20px;
 }
 
+.hero .hero-content {
+    width:100%;
+    margin:0 auto;
+}
+
+.hero .hero-content a.hero-btn {
+    display:inline-block;
+    width:252px;
+    max-width:100%;
+    margin-top:20px;
+    padding:15px 32px;
+    background:var(--gold);
+    color:#000;
+    text-decoration:none;
+}
+
+@media (max-width:768px) {
+    .hero .hero-content a.hero-btn {
+        width:100%;
+    }
+}
+
 .section{
     padding:70px 10%;
 }
@@ -114,6 +136,7 @@
 </header>
 
 <section class="hero">
+    <div class="hero-content">
     <h1>About EA Mason Transportation LLC</h1>
 
     <p>
@@ -123,9 +146,10 @@
         maintaining transparency every step of the journey.
     </p>
 
-    <a href="apply.html" class="btn hero-btn">
+    <a href="apply.html" class="btn-primary hero-btn">
         Apply Now
     </a>
+    </div>
 </section>
 
 <section class="section">
