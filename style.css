@@ -1015,6 +1015,20 @@ gap:25px;
     margin: 75px auto 0;
 }
 
+.hero-poweronly .btn-primary {
+    display: inline-block;
+    width: 252px;
+    max-width: 100%;
+    margin-top: 20px;
+    padding: 15px 32px;
+    color: #000;
+    background: var(--gold);
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12);
+}
+
 .hero-poweronly .stat-card {
     padding: 14px 10px;
     color: #fff;
@@ -1902,6 +1916,10 @@ footer {
 
     .hero-poweronly .hero-stats{
         grid-template-columns:1fr;
+    }
+
+    .hero-poweronly .btn-primary{
+        width:100%;
     }
 
     .section h2{
