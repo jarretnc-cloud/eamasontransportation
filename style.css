@@ -1870,7 +1870,7 @@ footer {
     url("contact-hero.jpg");
     background-size:cover;
     background-position:center;
-    padding:120px 20px;
+    padding:57px 20px;
     text-align:center;
     color:#fff;
 }
@@ -1889,6 +1889,12 @@ footer {
     font-size:1.2rem;
     line-height:1.8;
     margin-bottom:35px;
+}
+
+@media (max-width:520px){
+    .hero-contact{
+        padding:36px 20px;
+    }
 }
 
 .hero-buttons{
