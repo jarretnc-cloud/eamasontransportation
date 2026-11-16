@@ -49,50 +49,105 @@
 
 </header>
 
-    <input type="text"
-           name="company_name"
-           placeholder="Company Name"
-           required>
+    <section class="contact-container">
 
-    <input type="text"
-           name="contact_name"
-           placeholder="Contact Name"
-           required>
+<div class="contact-grid">
 
-    <input type="email"
-           name="email"
-           placeholder="Email Address"
-           required>
+<div class="contact-info">
 
-    <input type="tel"
-           name="phone"
-           placeholder="Phone Number"
-           required>
+<div class="info-card">
+    <h3>📞 Dispatch Support</h3>
+    <p>
+        Speak directly with our team about available freight,
+        dispatch services, and carrier support.
+    </p>
+</div>
 
-    <select name="service_interest" required>
-        <option value="">Select Service</option>
-        <option>Dispatch Services</option>
-        <option>Owner Operator Support</option>
-        <option>Box Truck Dispatch</option>
-        <option>Power Only Dispatch</option>
-        <option>Dry Van Dispatch</option>
-        <option>General Information</option>
-    </select>
+<div class="info-card">
+    <h3>📧 Fast Response</h3>
+    <p>
+        Most inquiries receive a response within one business day.
+    </p>
+</div>
 
-    <input type="text"
-           name="mc_number"
-           placeholder="MC Number (Optional)">
+<div class="info-card">
+    <h3>🚚 Coverage</h3>
+    <p>
+        Supporting owner operators and carriers nationwide.
+    </p>
+</div>
 
-    <textarea name="message"
-              rows="6"
-              placeholder="Tell us how we can help..."
-              required></textarea>
+</div>
 
-    <button type="submit">
-        Submit Request
-    </button>
+<form class="contact-form"
+      name="contact-request"
+      method="POST"
+      action="/thank-you.html"
+      data-netlify="true"
+      netlify-honeypot="bot-field">
+
+<input type="hidden" name="form-name" value="contact-request">
+
+<p hidden>
+<input name="bot-field">
+</p>
+
+<h2 class="form-title">
+Request Dispatch Information
+</h2>
+
+<div class="form-row">
+
+<input type="text"
+       name="company_name"
+       placeholder="Company Name"
+       required>
+
+<input type="text"
+       name="contact_name"
+       placeholder="Contact Name"
+       required>
+
+</div>
+
+<div class="form-row">
+
+<input type="email"
+       name="email"
+       placeholder="Email Address"
+       required>
+
+<input type="tel"
+       name="phone"
+       placeholder="Phone Number"
+       required>
+
+</div>
+
+<select name="service_interest" required>
+    <option value="">Select Service</option>
+    <option>Dispatch Services</option>
+    <option>Box Truck Dispatch</option>
+    <option>Power Only Dispatch</option>
+    <option>Dry Van Dispatch</option>
+    <option>Owner Operator Support</option>
+    <option>General Information</option>
+</select>
+
+<input type="text"
+       name="mc_number"
+       placeholder="MC Number (Optional)">
+
+<textarea name="message"
+          placeholder="Tell us how we can help..."
+          required></textarea>
+
+<button type="submit">
+Submit Request
+</button>
 
 </form>
+
 
 <div class="chat-section">
 
