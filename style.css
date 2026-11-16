@@ -672,6 +672,17 @@ repeat(auto-fit,minmax(280px,1fr));
 gap:25px;
 }
 
+@media (min-width:1100px){
+    .drivers-grid{
+        grid-template-columns:repeat(5,minmax(0,1fr));
+    }
+
+    .drivers-grid .card{
+        padding:15px;
+        overflow-wrap:break-word;
+    }
+}
+
 .services .section-title {
     margin-bottom: 32px;
     text-align: center;
