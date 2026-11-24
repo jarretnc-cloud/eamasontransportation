@@ -362,6 +362,32 @@ placeholder="Tell us anything important about your operation..."></textarea>
 SUBMIT APPLICATION
 </button>
 
+<form id="applicationForm">
+
+  <input
+      type="text"
+      id="fullName"
+      placeholder="Full Name"
+      required>
+
+  <input
+      type="email"
+      id="email"
+      placeholder="Email"
+      required>
+
+  <input
+      type="tel"
+      id="phone"
+      placeholder="Phone"
+      required>
+
+  <button type="submit">
+      Submit
+  </button>
+
+</form>
+
 </div>
 </form>
 
@@ -378,6 +404,56 @@ SUBMIT APPLICATION
 
     <p>&copy; 2026 EA Mason Transportation LLC. All Rights Reserved.</p>
 </footer>
+
+<script>
+
+document
+.getElementById("applicationForm")
+.addEventListener("submit", async function(e){
+
+    e.preventDefault();
+
+    const payload = {
+        fullName:
+          document.getElementById("fullName").value,
+
+        email:
+          document.getElementById("email").value,
+
+        phone:
+          document.getElementById("phone").value
+    };
+
+    const response = await fetch(
+      "/.netlify/functions/submit-application",
+      {
+        method:"POST",
+        headers:{
+          "Content-Type":"application/json"
+        },
+        body:JSON.stringify(payload)
+      }
+    );
+
+    const result = await response.json();
+
+    if(result.success){
+
+        alert(
+          "Application submitted successfully!"
+        );
+
+    } else {
+
+        alert(
+          "Something went wrong."
+        );
+
+    }
+
+});
+
+</script>
 
 </body>
 </html>
