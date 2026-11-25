@@ -1748,6 +1748,22 @@ box-shadow:
     margin-top:20px;
 }
 
+.call-btn {
+    display: inline-block;
+    background: #0056b3;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.call-btn:hover {
+    background: #003d82;
+}
+
 .footer-logo{
 height:90px;
 margin-bottom:20px;
